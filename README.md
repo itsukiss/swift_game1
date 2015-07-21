@@ -38,8 +38,21 @@ AppDelegate.swift中のMAX[]の値を書き換えることで使える幅が変�
 現在はlet MAX = [0,8,8,9,9,2,1]となっています。
 これは101~108,201~208,301~309,401~409,501~502,601が使うということです
 
-また音楽は
-music1.mp3,music2.mp3というファイルで指定する。
+音楽とボスは現在は4つである。
+音楽はmusic1.mp3〜music4.mp3というファイルで指定する。
 またその音楽のアルバムアートワークをmusic1.jpg,music2.jpgというように音楽と対応させて入れておく。
 ボスはBossSceneのテクスチャに適当な画像を指定すれば良い。
+具体的には89~97行目の下記の部分である
+    let bossTexture = SKTexture(imageNamed: "music1.jpg")
+    let boss1Texture = SKTexture(imageNamed: "triangle.png")
+    let boss2Texture = SKTexture(imageNamed: "rect.png")
+    let boss3Texture = SKTexture(imageNamed: "radius.png")
+    let boss4Texture = SKTexture(imageNamed: "main.png")
+    let boss5Texture = SKTexture(imageNamed: "boss5.png")
+    let boss6Texture = SKTexture(imageNamed: "boss6.png")
+    let boss4_1Texture = SKTexture(imageNamed: "boss4_1.png")
+    let boss4_2Texture = SKTexture(imageNamed: "boss4_2.png")
 
+さらに
+c.mp4という名前で動画を入れる。オープニングの映像になる
+title.pngという名前でタイトル画像を入れる。
